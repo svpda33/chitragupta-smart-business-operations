@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cg-canvas: #f8fafc;
+  --cg-surface: #ffffff;
+  --cg-surface-elevated: #ffffff;
+  --cg-surface-subtle: #f1f5f9;
+  --cg-border: #e2e8f0;
+  --cg-border-strong: #cbd5e1;
+  --cg-text-primary: #0f172a;
+  --cg-text-secondary: #475569;
+  --cg-text-muted: #64748b;
+  --cg-accent: #0d9488;
+  --cg-accent-soft: #f0fdfa;
+  --cg-chart-grid: #e2e8f0;
+  --cg-chart-text: #64748b;
+}
+
+.dark {
+  --cg-canvas: #0b1120;
+  --cg-surface: #111827;
+  --cg-surface-elevated: #162032;
+  --cg-surface-subtle: #1e293b;
+  --cg-border: #1e293b;
+  --cg-border-strong: #334155;
+  --cg-text-primary: #f1f5f9;
+  --cg-text-secondary: #cbd5e1;
+  --cg-text-muted: #94a3b8;
+  --cg-accent: #14b8a6;
+  --cg-accent-soft: rgba(20, 184, 166, 0.14);
+  --cg-chart-grid: #1e293b;
+  --cg-chart-text: #94a3b8;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--cg-canvas);
+    color: var(--cg-text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    @apply antialiased transition-colors duration-150;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--cg-accent);
+    outline-offset: 2px;
+  }
+}
+
+/*
+ * Comprehensive Dark-Mode Design Token Safeguards
+ * Guarantees that every surface, table, input, modal, badge, and Recharts tooltip
+ * across all pages adapts cleanly when `.dark` is active on <html>.
+ */
+.dark .bg-white:not(.invoice-paper) {
+  background-color: var(--cg-surface) !important;
+}
+.dark .bg-white\/90 {
+  background-color: rgba(17, 24, 39, 0.9) !important;
+}
+.dark .bg-white\/80 {
+  background-color: rgba(17, 24, 39, 0.85) !important;
+}
+.dark .bg-slate-50:not(.invoice-paper-subtle) {
+  background-color: #0f172a !important;
+}
+.dark .bg-slate-50\/70,
+.dark .bg-slate-50\/60,
+.dark .bg-slate-50\/50 {
+  background-color: rgba(30, 41, 59, 0.55) !important;
+}
+.dark .bg-slate-100:not(.invoice-paper-subtle) {
+  background-color: #1e293b !important;
+}
+.dark .bg-slate-200 {
+  background-color: #334155 !important;
+}
+.dark .border-slate-200:not(.invoice-paper-border),
+.dark .border-slate-100:not(.invoice-paper-border),
+.dark .divide-slate-200 > :not([hidden]) ~ :not([hidden]),
+.dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1e293b !important;
+}
+.dark .border-slate-300:not(.invoice-paper-border) {
+  border-color: #334155 !important;
+}
+.dark .text-slate-900:not(.invoice-paper-ink) {
+  color: #f1f5f9 !important;
+}
+.dark .text-slate-800:not(.invoice-paper-ink) {
+  color: #e2e8f0 !important;
+}
+.dark .text-slate-700:not(.invoice-paper-ink) {
+  color: #cbd5e1 !important;
+}
+.dark .text-slate-600:not(.invoice-paper-ink) {
+  color: #94a3b8 !important;
+}
+.dark .text-slate-500:not(.invoice-paper-ink) {
+  color: #94a3b8 !important;
+}
+.dark .hover\:bg-slate-50:hover,
+.dark .hover\:bg-slate-50\/50:hover {
+  background-color: rgba(30, 41, 59, 0.7) !important;
+}
+.dark .hover\:bg-slate-100:hover {
+  background-color: #1e293b !important;
+}
+.dark .hover\:text-slate-900:hover {
+  color: #f8fafc !important;
+}
+
+/* Soft tinted surfaces in dark mode */
+.dark .bg-emerald-50,
+.dark .bg-emerald-50\/50,
+.dark .bg-emerald-50\/60,
+.dark .bg-emerald-50\/70 {
+  background-color: rgba(16, 185, 129, 0.12) !important;
+}
+.dark .border-emerald-200 {
+  border-color: rgba(16, 185, 129, 0.3) !important;
+}
+.dark .text-emerald-900,
+.dark .text-emerald-800,
+.dark .text-emerald-700 {
+  color: #6ee7b7 !important;
+}
+
+.dark .bg-blue-50,
+.dark .bg-blue-50\/50,
+.dark .bg-blue-50\/60 {
+  background-color: rgba(59, 130, 246, 0.12) !important;
+}
+.dark .border-blue-200 {
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+.dark .text-blue-900,
+.dark .text-blue-800,
+.dark .text-blue-700 {
+  color: #93c5fd !important;
+}
+
+.dark .bg-red-50,
+.dark .bg-red-50\/60 {
+  background-color: rgba(239, 68, 68, 0.13) !important;
+}
+.dark .border-red-200 {
+  border-color: rgba(239, 68, 68, 0.32) !important;
+}
+.dark .text-red-900,
+.dark .text-red-800,
+.dark .text-red-700,
+.dark .text-red-600 {
+  color: #fca5a5 !important;
+}
+
+.dark .bg-amber-50,
+.dark .bg-amber-50\/60,
+.dark .bg-amber-50\/80 {
+  background-color: rgba(245, 158, 11, 0.13) !important;
+}
+.dark .border-amber-200 {
+  border-color: rgba(245, 158, 11, 0.32) !important;
+}
+.dark .text-amber-900,
+.dark .text-amber-800,
+.dark .text-amber-700 {
+  color: #fcd34d !important;
+}
+
+.dark .bg-indigo-50,
+.dark .bg-indigo-50\/40 {
+  background-color: rgba(99, 102, 241, 0.13) !important;
+}
+.dark .bg-indigo-100\/70 {
+  background-color: rgba(99, 102, 241, 0.2) !important;
+}
+.dark .border-indigo-200,
+.dark .border-indigo-200\/60 {
+  border-color: rgba(99, 102, 241, 0.32) !important;
+}
+.dark .text-indigo-950,
+.dark .text-indigo-900,
+.dark .text-indigo-700 {
+  color: #c7d2fe !important;
+}
+
+.dark .bg-brand-50,
+.dark .bg-brand-50\/50 {
+  background-color: rgba(20, 184, 166, 0.14) !important;
+}
+.dark .border-brand-200,
+.dark .border-brand-300 {
+  border-color: rgba(20, 184, 166, 0.35) !important;
+}
+.dark .text-brand-800,
+.dark .text-brand-700,
+.dark .text-brand-600 {
+  color: #2dd4bf !important;
+}
+
+/* Recharts dark mode tooltips & axis labels */
+.dark .recharts-default-tooltip {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+  color: #f1f5f9 !important;
+  border-radius: 10px !important;
+}
+.dark .recharts-tooltip-label {
+  color: #e2e8f0 !important;
+}
+.dark .recharts-cartesian-axis-tick-value {
+  fill: #94a3b8 !important;
+}
+.dark .recharts-legend-item-text {
+  color: #cbd5e1 !important;
+}
+
+/* Print-friendly invoice formatting (always crisp white document regardless of dark mode) */
+@media print {
+  body,
+  html {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+  aside,
+  header,
+  .no-print {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+  .lg\:pl-64,
+  .lg\:pl-\[72px\] {
+    padding-left: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
