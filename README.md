@@ -107,55 +107,119 @@ The copilot answers finance and inventory questions using whitelisted read-only 
 
 ## Application Screenshots
 
-Laptop-sized screenshots captured from the running application using the demonstration accounts.
+These 1440 × 900 desktop screenshots show the actual application with synthetic demonstration data.
 
-### Financial Dashboard
+### Application Overview
 
-Live KPIs, receivables, business alerts, invoice pipeline, and recent activity.
+Landing and authentication screens for evaluators.
 
-| Light mode | Dark mode |
+| Landing — Light | Landing — Dark |
 |---|---|
-| ![Dashboard in light mode](docs/screenshots/dashboard-light.png) | ![Dashboard in dark mode](docs/screenshots/dashboard-dark.png) |
+| ![Chitragupta landing page in light mode](docs/screenshots/landing-light.png) | ![Chitragupta landing page in dark mode](docs/screenshots/landing-dark.png) |
+
+| Login — Light | Login — Dark |
+|---|---|
+| ![Chitragupta login in light mode](docs/screenshots/login-light.png) | ![Chitragupta login in dark mode](docs/screenshots/login-dark.png) |
+
+| Registration — Light | Registration — Dark |
+|---|---|
+| ![Chitragupta registration in light mode](docs/screenshots/registration-light.png) | ![Chitragupta registration in dark mode](docs/screenshots/registration-dark.png) |
+
+### Dashboard
+
+Live KPIs, receivables, collection activity, charts, stock alerts, and actionable business insights.
+
+| Dashboard — Light | Dashboard — Dark |
+|---|---|
+| ![Financial dashboard in light mode](docs/screenshots/dashboard-light.png) | ![Financial dashboard in dark mode](docs/screenshots/dashboard-dark.png) |
 
 ### AI Finance Copilot
 
-The copilot uses verified ledger figures to provide financial summaries and actionable follow-ups.
+Ledger-grounded financial summaries and actionable questions from the AI assistant.
 
-| Light mode | Dark mode |
+| AI Copilot — Light | AI Copilot — Dark |
 |---|---|
 | ![AI Finance Copilot in light mode](docs/screenshots/ai-finance-copilot-light.png) | ![AI Finance Copilot in dark mode](docs/screenshots/ai-finance-copilot-dark.png) |
 
-### Invoices
+### Cash Flow & Forecasting
 
-Invoice management and a guided GST-ready invoice creation studio.
+Cash projections, scheduled outflows, runway estimates, and delayed-payment what-if simulations.
 
-| Invoice list | Invoice creation |
+| Cash Flow — Light | Cash Flow — Dark |
 |---|---|
-| ![Invoice management](docs/screenshots/invoices-light.png) | ![Invoice creation](docs/screenshots/invoices-create-light.png) |
+| ![Cash flow forecast in light mode](docs/screenshots/cash-flow-light.png) | ![Cash flow forecast in dark mode](docs/screenshots/cash-flow-dark.png) |
 
-### Inventory and Products
+### Customer Management
 
-Product catalogue and stock information from the demonstration business.
+Customer records, searchable accounts, and individual business relationships.
 
-| Light mode | Dark mode |
+| Customers — Light | Customers — Dark |
+|---|---|
+| ![Customer management in light mode](docs/screenshots/customers-light.png) | ![Customer management in dark mode](docs/screenshots/customers-dark.png) |
+
+### Invoice Management
+
+Invoice lists, payment status, lifecycle details, and GST-ready invoice creation.
+
+| Invoices — Light | Invoices — Dark |
+|---|---|
+| ![Invoice list in light mode](docs/screenshots/invoices-light.png) | ![Invoice list in dark mode](docs/screenshots/invoices-dark.png) |
+
+| Invoice Creation — Light | Invoice Creation — Dark |
+|---|---|
+| ![Invoice creation in light mode](docs/screenshots/invoice-creation-light.png) | ![Invoice creation in dark mode](docs/screenshots/invoice-creation-dark.png) |
+
+### Payment Management
+
+Payment records, methods, references, outstanding balances, and transaction history.
+
+| Payments — Light | Payments — Dark |
+|---|---|
+| ![Payment management in light mode](docs/screenshots/payments-light.png) | ![Payment management in dark mode](docs/screenshots/payments-dark.png) |
+
+### Reminders
+
+Overdue and upcoming payment follow-ups with ready-to-use reminder actions.
+
+| Reminders — Light | Reminders — Dark |
+|---|---|
+| ![Payment reminders in light mode](docs/screenshots/reminders-light.png) | ![Payment reminders in dark mode](docs/screenshots/reminders-dark.png) |
+
+### Product Catalogue & Inventory
+
+Demo products, categories, stock levels, valuation, and low/out-of-stock alerts.
+
+| Catalogue — Light | Catalogue — Dark |
+|---|---|
+| ![Product catalogue in light mode](docs/screenshots/catalogue-light.png) | ![Product catalogue in dark mode](docs/screenshots/catalogue-dark.png) |
+
+| Inventory — Light | Inventory — Dark |
 |---|---|
 | ![Inventory in light mode](docs/screenshots/inventory-light.png) | ![Inventory in dark mode](docs/screenshots/inventory-dark.png) |
 
-### Cash Flow
+### Business Notepad
 
-30/60/90-day projections and delayed-payment what-if simulations.
+Operational notes for customers, suppliers, finance, and daily tasks.
 
-| Light mode | Dark mode |
+| Notepad — Light | Notepad — Dark |
 |---|---|
-| ![Cash flow in light mode](docs/screenshots/cash-flow-light.png) | ![Cash flow in dark mode](docs/screenshots/cash-flow-dark.png) |
+| ![Business notepad in light mode](docs/screenshots/notepad-light.png) | ![Business notepad in dark mode](docs/screenshots/notepad-dark.png) |
 
-### Customers and Payments
+### Settings & Themes
 
-Customer records and payment tracking for the demonstration business.
+Business profile configuration and consistent light/dark theme controls.
 
-| Customers | Payments |
+| Settings — Light | Settings — Dark |
 |---|---|
-| ![Customer management](docs/screenshots/customers-light.png) | ![Payment management](docs/screenshots/payments-light.png) |
+| ![Business settings in light mode](docs/screenshots/settings-light.png) | ![Business settings in dark mode](docs/screenshots/settings-dark.png) |
+
+### Authentication and Demo Business
+
+Evaluators can select either preconfigured public demo account from the login screen.
+
+| Oakwood Dashboard — Light | Oakwood Dashboard — Dark |
+|---|---|
+| ![Oakwood demonstration dashboard in light mode](docs/screenshots/oakwood-dashboard-light.png) | ![Oakwood demonstration dashboard in dark mode](docs/screenshots/oakwood-dashboard-dark.png) |
 
 ## Project Documentation
 
