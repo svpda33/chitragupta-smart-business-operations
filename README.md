@@ -77,9 +77,29 @@ npm test
 npm run build
 ```
 
-## Demo Account Access
+## Demo Accounts – Try Chitragupta
 
-Use the public accounts and complete seeded demonstration data in [docs/DEMO_ACCOUNT.md](docs/DEMO_ACCOUNT.md). Demo passwords are intended only for evaluation and must not be reused for real accounts.
+Two preconfigured business accounts have already been created. Evaluators can sign in immediately without registering or setting up a business.
+
+### Account 1: Urban Stationery & Office Supplies
+
+- **Owner:** Rahul Sharma
+- **Email:** `demo@chitragupta.in`
+- **Password:** `ChitraDemo@2026!`
+- **Sample data:** 50 products
+
+### Account 2: Oakwood Furniture Studio
+
+- **Owner:** Arjun Mehta
+- **Email:** `furniture.demo@chitragupta.in`
+- **Password:** `FurnitureDemo@2026!`
+- **Sample data:** 50 products
+
+Both accounts have separate business data, including products, customers, invoices, payments, expenses, inventory, and notes, according to the actual implementation.
+
+These credentials are public demonstration credentials for hackathon evaluation only. Each business has isolated data, and evaluators can log in using either account to explore the application. Normal users can register their own independent business account.
+
+See [docs/DEMO_ACCOUNT.md](docs/DEMO_ACCOUNT.md) for the complete demo information.
 
 ## AI Finance Copilot
 
