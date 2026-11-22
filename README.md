@@ -107,19 +107,23 @@ The copilot answers finance and inventory questions using whitelisted read-only 
 
 ## Application Screenshots
 
-Actual application screens captured in light mode using the Urban Stationery & Office Supplies demonstration account.
+Laptop-sized screenshots captured from the running application using the demonstration accounts.
 
 ### Financial Dashboard
 
 Live KPIs, receivables, business alerts, invoice pipeline, and recent activity.
 
-![Chitragupta financial dashboard](docs/screenshots/dashboard.png)
+| Light mode | Dark mode |
+|---|---|
+| ![Dashboard in light mode](docs/screenshots/dashboard-light.png) | ![Dashboard in dark mode](docs/screenshots/dashboard-dark.png) |
 
 ### AI Finance Copilot
 
 The copilot uses verified ledger figures to provide financial summaries and actionable follow-ups.
 
-![Chitragupta AI Finance Copilot](docs/screenshots/ai-finance-copilot.png)
+| Light mode | Dark mode |
+|---|---|
+| ![AI Finance Copilot in light mode](docs/screenshots/ai-finance-copilot-light.png) | ![AI Finance Copilot in dark mode](docs/screenshots/ai-finance-copilot-dark.png) |
 
 ### Invoices
 
@@ -127,19 +131,23 @@ Invoice management and a guided GST-ready invoice creation studio.
 
 | Invoice list | Invoice creation |
 |---|---|
-| ![Invoice management](docs/screenshots/invoices.png) | ![Invoice creation](docs/screenshots/invoices-new.png) |
+| ![Invoice management](docs/screenshots/invoices-light.png) | ![Invoice creation](docs/screenshots/invoices-create-light.png) |
 
 ### Inventory and Products
 
 Product catalogue and stock information from the demonstration business.
 
-![Inventory and product management](docs/screenshots/inventory.png)
+| Light mode | Dark mode |
+|---|---|
+| ![Inventory in light mode](docs/screenshots/inventory-light.png) | ![Inventory in dark mode](docs/screenshots/inventory-dark.png) |
 
 ### Cash Flow
 
 30/60/90-day projections and delayed-payment what-if simulations.
 
-![Cash flow forecast](docs/screenshots/cash-flow.png)
+| Light mode | Dark mode |
+|---|---|
+| ![Cash flow in light mode](docs/screenshots/cash-flow-light.png) | ![Cash flow in dark mode](docs/screenshots/cash-flow-dark.png) |
 
 ### Customers and Payments
 
@@ -147,7 +155,7 @@ Customer records and payment tracking for the demonstration business.
 
 | Customers | Payments |
 |---|---|
-| ![Customer management](docs/screenshots/customers.png) | ![Payment management](docs/screenshots/payments.png) |
+| ![Customer management](docs/screenshots/customers-light.png) | ![Payment management](docs/screenshots/payments-light.png) |
 
 ## Project Documentation
 
